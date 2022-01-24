@@ -12,17 +12,41 @@
       }
       body {
         background-color: violet;
-        margin: 20px 15px;
+        margin: 20px;
+        padding: 20px;
       }
       div {
-        background-color: white;
+        padding: 10px;
+      }
+      #first {
         width: 150px;
         height: 150px;
-        margin: 50px 15px;
+        background-color: white;
+      }
+      #second {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+      }
+      #third {
+        width: 50px;
+        height: 50px;
+        background-color: wheat;
+      }
+      #fourth {
+        width: 25px;
+        height: 25px;
+        background-color: blanchedalmond;
       }
     </style>
   </head>
   <body>
-    <div></div>
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <div id="fourth"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
