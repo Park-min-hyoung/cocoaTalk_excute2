@@ -4,25 +4,20 @@
     <title>The Park Times</title>
     <style>
       body {
-        height: 100vh;
+        height: 1000vh;
         margin: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
       }
       div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 300px;
         height: 300px;
-        font-size: 20px;
         color: white;
-        background-color: teal;
       }
-      #second {
+      #green {
+        background-color: teal;
+        position: fixed;
+        opacity: 0.2;
+      }
+      #different {
         background-color: wheat;
       }
     </style>
@@ -30,7 +25,6 @@
     <meta name="description" content="This is my website" />
   </head>
   <body>
-    <div>1</div>
-    <div id="second">2</div>
-    <div>3</div>
+    <div id="green"></div>
+    <div id="different"></div>
 </html>
