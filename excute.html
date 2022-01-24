@@ -3,6 +3,9 @@
   <head>
     <title>The Park Times</title>
     <style>
+      * {
+        border: 2px solid black;
+      }
       html {
         background-color: tomato;
       }
@@ -12,7 +15,7 @@
         background-color: thistle;
       }
       div {
-        padding: 10px;
+        padding: 20px;
       }
       #first {
         background-color: whitesmoke;
@@ -29,10 +32,8 @@
         width: 50px;
         height: 50px;
       }
-      #fourth {
-        background-color: blanchedalmond;
-        width: 25px;
-        height: 25px;
+      span {
+        border-style: dotted;
       }
     </style>
     <meta charset="utf-8" />
@@ -42,7 +43,7 @@
     <div id="first">
       <div id="second">
         <div id="third">
-          <div id="fourth"></div>
+          <span>hello</span>
         </div>
       </div>
     </div>
