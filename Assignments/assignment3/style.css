@@ -1,0 +1,74 @@
+body {
+  background-color: wheat;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  height: 300px;
+  margin: 10px 10px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box div:first-child {
+  width: 95%;
+  height: 15px;
+  margin: 5px auto;
+}
+
+.box div:nth-child(2) {
+  font-weight: 1000;
+  position: absolute;
+  font-size: 20px;
+  top: 20px;
+  left: 10px;
+  margin: 20px auto;
+}
+
+.box div:nth-child(3) {
+  font-weight: 1000;
+  position: absolute;
+  font-size: 14px;
+  top: 70px;
+  left: 10px;
+  margin: 20px auto;
+}
+
+.box div:last-child {
+  width: 95%;
+  height: 175px;
+  margin: 5px auto;
+}
+
+.tomato div:first-child,
+.tomato div:last-child {
+  background-color: tomato;
+}
+
+.teal div:first-child,
+.teal div:last-child {
+  background-color: teal;
+}
+
+.burlywood div:first-child,
+.burlywood div:last-child {
+  background-color: burlywood;
+}
+
+.thistle div:first-child,
+.thistle div:last-child {
+  background-color: thistle;
+}
