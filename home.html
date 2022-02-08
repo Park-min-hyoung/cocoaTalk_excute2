@@ -5,30 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="박민형의 홈페이지 입니다!" />
+    <script type="text/javascript" src="excute.js"></script>
     <title>Document</title>
     <style>
       body {
         height: 100vh;
         margin: 50px;
       }
-      input {
-        border: 1px solid wheat;
+      a:visited {
+        color: blue;
       }
-      input:required {
-        background-color: tomato;
+      a:hover {
+        color: yellow;
       }
-      input[placeholder$="name"] {
-        background-color: pink;
+      a:active {
+        color: red;
+      }
+      form {
+        padding: 20px;
+        border: 1px solid orange;
+        display: flex;
+        flex-direction: column;
+      }
+      form:focus-within {
+        border-color: seagreen;
+        border-width: 6px;
+      }
+      form:hover input:focus {
+        background-color: yellowgreen;
       }
     </style>
   </head>
   <body>
-    <div>
-      <form action="">
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input type="password" required placeholder="password" />
-      </form>
-    </div>
+    <a href="https://apple.com">Go to apple</a>
+    <form action="">
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </form>
   </body>
 </html>
