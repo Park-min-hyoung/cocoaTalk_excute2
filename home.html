@@ -7,28 +7,27 @@
     <meta name="description" content="박민형의 홈페이지 입니다!" />
     <title>Document</title>
     <style>
+      :root {
+        --main-color: #fcce00;
+        --default-border: 1px solid var(--main-color);
+      }
       body {
         height: 100vh;
         margin: 50px;
       }
-      input::placeholder {
-        color: orange;
+      p {
+        background-color: var(--main-color);
       }
-      p::selection {
-        color: white;
-        background-color: yellowgreen;
-      }
-      p::first-letter {
-        color: white;
-        font-size: 25px;
-        background: green;
+      a {
+        color: var(--main-color);
+        border: var(--default-border);
       }
     </style>
   </head>
   <body>
-    <form action="">
-      <input type="text" placeholder="Name" />
-    </form>
     <p>hihihihihihihiihhihi fsdfdfsfsdfsd</p>
+    <div>
+      <a href="#">website</a>
+    </div>
   </body>
 </html>
