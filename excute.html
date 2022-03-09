@@ -3,15 +3,20 @@
   <head>
     <title>The Park Times</title>
     <style>
+      @keyframes superSexyCoinFlip {
+        from {
+          transform: rotateY(0);
+        }
+        to {
+          transform: rotateY(180deg) translateX(100px);
+        }
+      }
       img {
-        width: 500px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
         border: 1px solid black;
         border-radius: 50%;
-        transition: transform 2s ease-in-out;
-      }
-      img:hover {
-        transform: rotateY(360deg) scale(0.5);
+        animation: superSexyCoinFlip 5s ease-in-out infinite;
       }
     </style>
     <meta charset="utf-8" />
@@ -19,7 +24,7 @@
   </head>
   <body>
     <img
-      src="https://coinpan.com/files/attach/images/198/847/062/264/0f4ba1b58bb7cffe8f81a933d7092994.jpeg"
+    src="https://coinpan.com/files/attach/images/198/847/062/264/0f4ba1b58bb7cffe8f81a933d7092994.jpeg""
     />
   </body>
 </html>
