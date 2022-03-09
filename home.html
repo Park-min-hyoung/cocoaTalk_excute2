@@ -7,26 +7,22 @@
     <meta name="description" content="박민형의 홈페이지 입니다!" />
     <title>Document</title>
     <style>
-      a {
-        width: 250px;
-        height: 60px;
-        background-color: tomato;
-        color: wheat;
-        font-size: 50px;
-        text-decoration: none;
-        border-radius: 10px;
-        padding: 5px;
-        transition: color 1s cubic-bezier(0.6, -0.28, 0.735, 0.045),
-          border-radius 5s ease-in-out, background-color 10s ease-in-out;
+      img {
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        border: 1px solid black;
+        transition: transform 2s ease-in-out;
       }
-      a:hover {
-        background-color: wheat;
-        color: tomato;
-        border-radius: 30px;
+      img:hover {
+        transform: rotateY(360deg) scale(0.5);
       }
     </style>
   </head>
   <body>
-    <a href="#">Go Home</a>
+    <img
+      src="https://coinpan.com/files/attach/images/198/847/062/264/0f4ba1b58bb7cffe8f81a933d7092994.jpeg"
+      alt=""
+    />
   </body>
 </html>

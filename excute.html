@@ -3,25 +3,23 @@
   <head>
     <title>The Park Times</title>
     <style>
-      a {
-        color: wheat;
-        background-color: tomato;
-        text-decoration: none;
-        padding: 3px 5px;
-        border-radius: 5px;
-        font-size: 55px;
-        transition: all 1s ease-in-out;
+      img {
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        border-radius: 50%;
+        transition: transform 2s ease-in-out;
       }
-      a:hover {
-        border-radius: 20px;
-        color: tomato;
-        background-color: wheat;
+      img:hover {
+        transform: rotateY(360deg) scale(0.5);
       }
     </style>
     <meta charset="utf-8" />
     <meta name="description" content="This is my website" />
   </head>
   <body>
-    <a href="#">Go Home</a>
+    <img
+      src="https://coinpan.com/files/attach/images/198/847/062/264/0f4ba1b58bb7cffe8f81a933d7092994.jpeg"
+    />
   </body>
 </html>
