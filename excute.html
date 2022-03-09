@@ -12,40 +12,31 @@
         padding: 5px;
         border-radius: 10px;
       }
-      a:visited {
-        color: tomato;
+      input::placeholder {
+        color: yellowgreen;
       }
-      a:hover {
-        color: teal;
+      p::selection {
+        color: white;
+        background-color: yellowgreen;
       }
-      a:focus {
-        color: turquoise;
+      p::first-letter {
+        color: white;
+        font-size: 25px;
+        background-color: yellowgreen;
       }
-      form {
-        border: 1px solid salmon;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-      }
-      form:focus-within {
-        border-color: seagreen;
-      }
-      /* form:hover input {
-        background-color: sienna;
+      /* p::first-line {
+        color: white;
+        font-size: 25px;
+        background-color: yellowgreen;
       } */
-      form:hover input:focus {
-        background-color: sienna;
-      }
     </style>
     <meta charset="utf-8" />
     <meta name="description" content="This is my website" />
   </head>
   <body>
-    <a href="https://apple.com">Go to apple</a>
     <form>
-      <input type="text" name="" id="" />
-      <input type="text" name="" id="" />
-      <input type="text" name="" id="" />
+      <input type="text" placeholder="Name" />
     </form>
+    <p>hihihihihihihiihhihi fsdfdfsfsdfsd</p>
   </body>
 </html>
