@@ -1,0 +1,124 @@
+:root {
+  --animation-width: 15%;
+  --animation-background-color: white;
+}
+
+@keyframes circlesRotate {
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+
+@keyframes squareBeat {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #6bbcbe;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circles-rotate::after {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.circles-rotate {
+  width: var(--animation-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 125px;
+  position: relative;
+  will-change: transform;
+  animation: circlesRotate 10s ease forwards infinite;
+}
+
+.circles-rotate__circle::after {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.circles-rotate__circle {
+  width: 10%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--animation-background-color);
+}
+
+.circles-rotate__circle:first-child {
+  left: 0;
+}
+
+.circles-rotate__circle:last-child {
+  right: 0;
+}
+
+.squares_beat::after {
+  content: "";
+  display: block;
+  padding-top: 50%;
+}
+
+.squares_beat {
+  width: var(--animation-width);
+  margin-bottom: auto;
+  position: relative;
+}
+
+.squares_beat__square {
+  width: 16%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--animation-background-color);
+  animation: squareBeat 1.1s ease infinite;
+}
+
+.squares_beat__square:nth-child(1) {
+  left: 0;
+  animation-delay: 0s;
+}
+
+.squares_beat__square:nth-child(2) {
+  left: 21%;
+  animation-delay: 0.1s;
+}
+
+.squares_beat__square:nth-child(3) {
+  left: 42%;
+  animation-delay: 0.2s;
+}
+
+.squares_beat__square:nth-child(4) {
+  left: 63%;
+  animation-delay: 0.3s;
+}
+
+.squares_beat__square:last-child {
+  left: 84%;
+  animation-delay: 0.4s;
+}
