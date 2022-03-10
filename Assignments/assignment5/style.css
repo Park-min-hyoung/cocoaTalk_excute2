@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hi Melody", cursive;
+  background-color: #00c6ad;
+  height: 100vh;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: white;
+  width: 310px;
+  padding: 40px 30px;
+}
+
+.introduce-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.introduce-wrapper__column {
+  width: 50%;
+}
+
+.introduce-wrapper__photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: #ffbd11;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduce-wrapper__photo i {
+  font-size: 36px;
+  color: white;
+}
+
+.introduce-wrapper__title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.introduce-wrapper__author {
+  font-size: 22px;
+  opacity: 0.7;
+}
+
+.music-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.music-buttons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-bottom-width: 5px;
+}
+
+.music-buttons_play {
+  width: 120px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 26px;
+}
+
+.music-buttons_play i {
+  margin-right: 5px;
+}
+
+.music-buttons_heart,
+.music-buttons_plus {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.music-lists {
+  list-style: none;
+  padding: 0;
+}
+
+.music-list {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.music-list__cover {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.music-list__info {
+  display: flex;
+  flex-direction: column;
+}
+.music-list__info span:first-child {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.music-list__info span:last-child {
+  font-size: 18px;
+  margin-top: -5px;
+}
