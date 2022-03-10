@@ -4,6 +4,7 @@
   text-align: center;
   background-color: #fafafa;
   padding: 15px 10px;
+  margin-bottom: 10px;
 }
 
 #friends-display-link i {
@@ -16,4 +17,8 @@
 
 .fa-chevron-right {
   margin-left: 5px;
+}
+
+.friend-screen {
+  padding: 0px var(--horizontal-space);
 }

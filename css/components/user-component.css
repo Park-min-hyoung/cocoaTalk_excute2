@@ -20,3 +20,8 @@
 .user-component__subtitle {
   opacity: 0.5;
 }
+
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+}
