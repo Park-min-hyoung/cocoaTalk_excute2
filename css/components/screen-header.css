@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.fa-cog ~ div {
+.screen-header__icons span:last-child div {
   top: -3px;
   right: -7px;
 }
