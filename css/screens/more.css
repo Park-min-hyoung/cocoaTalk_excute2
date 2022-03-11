@@ -1,0 +1,26 @@
+.more-screen .icon-row {
+  margin-top: 35px;
+}
+
+.more-screen .icon-row__icon:nth-child(2) {
+  position: relative;
+}
+
+.more-emoticons-alram {
+  position: absolute;
+  top: -5px;
+  right: 7.5px;
+  width: 7.5px;
+  height: 7.5px;
+}
+
+.more-suggestion {
+  margin-top: 45px;
+  padding-top: 30px;
+  border-top: var(--main-border);
+}
+
+.more-suggestions__title {
+  font-weight: 700;
+  margin-bottom: 30px;
+}

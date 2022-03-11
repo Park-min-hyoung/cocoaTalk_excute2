@@ -16,12 +16,7 @@
   position: relative;
 }
 
-.new-alram {
-  width: 5px;
-  height: 5px;
-  background-color: tomato;
-  border-radius: 50%;
-  position: absolute;
+.fa-cog ~ div {
   top: -3px;
   right: -7px;
 }
