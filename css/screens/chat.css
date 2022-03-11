@@ -6,6 +6,7 @@
 #chat-screen .status-bar,
 #chat-screen .alt-header {
   position: fixed;
+  top: 0px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -16,10 +17,33 @@
 }
 
 #chat-screen .alt-header {
-  top: 15px;
+  top: 20px;
   z-index: 1;
 }
 
 .main-chat {
   margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  background-color: #92a4b2;
+  color: #e4e9ed;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.message-row {
+  display: flex;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  margin-right: 5px;
 }
