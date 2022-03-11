@@ -3,6 +3,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   font-size: 22px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -10,8 +11,12 @@
   border-color: rgba(0, 0, 0, 0.1);
 }
 
-.settings__setting i {
+.settings__setting__column i {
   width: 45px;
   opacity: 0.8;
   margin: 0;
+}
+
+.settings__setting__column:last-child {
+  opacity: 0.5;
 }
