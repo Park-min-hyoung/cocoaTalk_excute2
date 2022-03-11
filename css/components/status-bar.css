@@ -27,3 +27,7 @@
 .status-bar__column:last-child i {
   margin-left: 5px;
 }
+
+.status-bar__column:last-child .chat-bolt {
+  margin-right: 8px;
+}
