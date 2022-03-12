@@ -38,6 +38,16 @@
   margin-bottom: 30px;
 }
 
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 #splash-screen {
   width: 100vw;
   height: 100vh;
@@ -47,5 +57,7 @@
   align-items: center;
   position: absolute;
   top: 0;
-  font-size: 122px;
+  font-size: 132px;
+  animation: hideSplashScreen 0.5s ease-in-out forwards;
+  animation-delay: 1s;
 }
