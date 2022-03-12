@@ -99,3 +99,21 @@
 .open-post__heart-count i {
   margin-right: 3px;
 }
+
+@keyframes heartBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.7);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.open-post__heart-count i:hover {
+  color: tomato;
+  animation: heartBeat 1s linear infinite;
+  will-change: transform;
+}
