@@ -13,13 +13,53 @@
   justify-content: space-between;
 }
 
-.nav__link {
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav__btn {
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+  transform: translateY(70px);
+}
+
+.nav__btn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.nav__btn:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.nav__btn:last-child {
+  animation-delay: 0.8s;
+}
+
+.nav_btn .nav__link {
   color: #2f373f;
   position: relative;
+}
+
+@keyframes norificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-3px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 .nav__notification {
   position: absolute;
   left: 15px;
   bottom: 15px;
+  /* animation: norificationAnimation 2s ease-in-out infinite; */
 }
