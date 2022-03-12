@@ -98,3 +98,62 @@
 .message-row--own .message__time {
   margin: 0;
 }
+
+.reply {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: white;
+  padding: 5px 20px;
+  box-sizing: border-box;
+}
+
+.reply_column:first-child {
+  width: 10%;
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.reply_column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply_column:last-child input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: var(--main-border);
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+}
+
+.reply_column:last-child > i,
+.reply_column:last-child button {
+  position: absolute;
+}
+
+.reply_column:last-child > i {
+  right: 45px;
+  top: 18px;
+  font-size: 24px;
+  opacity: 0.4;
+}
+
+.reply_column:last-child button {
+  right: 3px;
+  top: 4px;
+  background-color: var(--yellow);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.reply_column:last-child button:focus,
+.reply_column:last-child button:active {
+  outline: none;
+}

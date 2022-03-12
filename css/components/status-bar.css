@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  margin: 0 5px;
 }
 
 .status-bar__column:first-child span {
@@ -29,5 +29,5 @@
 }
 
 .status-bar__column:last-child .chat-bolt {
-  margin-right: 8px;
+  margin-right: 11px;
 }
