@@ -37,3 +37,15 @@
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
 }
+
+#splash-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  font-size: 122px;
+}

@@ -81,7 +81,7 @@
 
 .message-row--own {
   justify-content: flex-end;
-  transform: translateX(17.5px);
+  transform: translateX(15px);
 }
 
 .message-row--own .message__info {
@@ -107,7 +107,7 @@
   bottom: 0px;
   width: 100%;
   background-color: white;
-  padding: 5px 20px;
+  padding: 5px 15px;
   box-sizing: border-box;
 }
 
