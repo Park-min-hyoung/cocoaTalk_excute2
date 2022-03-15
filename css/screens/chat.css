@@ -9,11 +9,13 @@
   top: 0px;
   width: 100%;
   box-sizing: border-box;
+  background-color: #abc1d1;
 }
 
 #chat-screen .status-bar {
-  top: 5px;
+  top: 0px;
   z-index: 2;
+  padding: 5px 0;
 }
 
 #chat-screen .alt-header {
@@ -125,7 +127,7 @@
   background-color: white;
   padding: 5px 15px;
   box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .reply__column:first-child {
