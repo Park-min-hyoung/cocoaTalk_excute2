@@ -21,11 +21,27 @@
   z-index: 1;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  1% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .main-chat {
-  margin-top: 120px;
+  margin-top: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.3s linear;
 }
 
 .chat__timestamp {
@@ -109,41 +125,43 @@
   background-color: white;
   padding: 5px 15px;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
-.reply_column:first-child {
+.reply__column:first-child {
   width: 10%;
   font-size: 20px;
   opacity: 0.7;
 }
 
-.reply_column:last-child {
+.reply__column:last-child {
   width: 90%;
   position: relative;
 }
 
-.reply_column:last-child input {
+.reply__column:last-child input {
   width: 100%;
   padding: 10px;
   border-radius: 20px;
   border: var(--main-border);
   background-color: #f8f8f8;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
-.reply_column:last-child > i,
-.reply_column:last-child button {
+.reply__column:last-child > i,
+.reply__column:last-child button {
   position: absolute;
 }
 
-.reply_column:last-child > i {
+.reply__column:last-child > i {
   right: 45px;
   top: 18px;
   font-size: 24px;
   opacity: 0.4;
 }
 
-.reply_column:last-child button {
+.reply__column:last-child button {
   right: 3px;
   top: 4px;
   background-color: var(--yellow);
@@ -153,7 +171,28 @@
   border-radius: 50%;
 }
 
-.reply_column:last-child button:focus,
-.reply_column:last-child button:active {
+.reply__column:last-child button:focus,
+.reply__column:last-child button:active {
   outline: none;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 98vw;
+  transform: translateX(-12%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }
